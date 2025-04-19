@@ -2,6 +2,10 @@ html, body {
     margin: 0;
     padding: 0;
     font-family:Inter, sans-serif;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 #input-container{
@@ -11,39 +15,37 @@ html, body {
     margin:1.25em;
     gap:12px;
     justify-items: center;
+    max-width: 100%;
+}
+
+#input-form{
+    display: contents;
 }
 
 #color-picker{
-width: 61px;
+width: minmax(0, 61px);
 height: 42px;
-top: 23px;
-left: 14px;
 border-width: 0.5px;
 background-color: #E5E5E5;
 border: 0.5px solid #D1D5DB;
 grid-column: 1;
+
 }
 
 #color-scheme{
- width: 312px;
+width: minmax(auto, 312px );
 height: 42px;
-top: 23px;
-left: 87px;
 border-radius: 6px;
 border-width: 1px;
 border: 1px solid #D1D5DB;
 box-shadow: 0px 1px 2px 0px #0000000D;
 grid-column: 2;
-
-
 }
 
 
 #get-color{
-    width: 123px;
+width: minmax(0, 123px);
 height: 42px;
-top: 23px;
-left: 412px;
 border-radius: 4px;
 border-width: 1px;
 border: 1px solid #D1D5DB;
@@ -65,6 +67,7 @@ letter-spacing: 0%;
 
 .color{
     height: 70vh;
+    width: 20vw;
 }
 #color1{
     background-color: #F55A5A;
