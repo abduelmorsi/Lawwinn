@@ -3,4 +3,4 @@
 
 Use your color picker to choose a color, select the mode by which to generate the color scheme, then press 'Get Color Scheme'. Click the color to copy its hex value.
 
-[https://lawwinn.netlify.app/](Click for live link)
+[Click for live link](https://lawwinn.netlify.app/)
