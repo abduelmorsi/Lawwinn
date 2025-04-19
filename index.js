@@ -18,6 +18,7 @@ getColorBtn.addEventListener('click', function(){
         currentColors = [colorPicker.value]
         for (color of data.colors){
             document.getElementById('color1').style.backgroundColor = colorPicker.value
+            document.getElementById('color1text').textContent = colorPicker.value
             document.getElementById(`color${count}`).style.backgroundColor = color.hex.value
             document.getElementById(`color${count}text`).textContent = color.hex.value
             count++
